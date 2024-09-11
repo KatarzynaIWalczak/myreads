@@ -169,9 +169,52 @@ body,
 .book-cover {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   background: #eee;
+  cursor: pointer;
 }
 .book-cover-title {
   padding: 20px 10px 0;
   text-align: center;
   font-size: 0.8em;
+}
+
+/* book details */
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.modal {
+  position: fixed;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  max-height: 80vh;
+  max-width: 80vw;
+  width: 100%;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+}
+
+td {
+  padding: 5px;
+}
+
+.close-button {
+  background: #2e7d32;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  float: right;
+  cursor: pointer;
+  margin: 10px 0;
 }
