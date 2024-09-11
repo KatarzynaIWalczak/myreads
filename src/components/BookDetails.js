@@ -7,6 +7,13 @@ const BookDetails = ({ open, onClose, bookDetails }) => {
   return (
     <div className="overlay">
       <div className="modal">
+        <button
+          className="close-button"
+          data-testid="close-button"
+          onClick={onClose}
+        >
+          &times;
+        </button>
         <table border="1">
           <tbody data-testid="table-body">
             {entries.map(([key, value]) => (
@@ -17,13 +24,6 @@ const BookDetails = ({ open, onClose, bookDetails }) => {
             ))}
           </tbody>
         </table>
-        <button
-          className="close-button"
-          data-testid="close-button"
-          onClick={onClose}
-        >
-          Close
-        </button>
       </div>
     </div>
   );
